@@ -1,4 +1,5 @@
- /*
+
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -21,7 +22,6 @@ public class Main {
     public static void main(String[] args) {
         Book_List mlb = new Book_List();
         Reader_List mlc = new Reader_List();
-
         while (true) {
             int choice = MenuManager.menu();
             switch (choice) {
@@ -56,8 +56,7 @@ public class Main {
                             MenuManager.deleteBeforeBCode(mlb);
                             break;
                         case 10:
-                            MenuManager.loadBookFromFile(mlb);
-                            MenuManager.displayBook(mlb);
+                            MenuManager.deleteAtPositionK(mlb);
                             break;
 //                        case 11:
 //                            MenuManager.f2(mlb);
@@ -75,7 +74,7 @@ public class Main {
 //                            MenuManager.f5(mlb);
 //                            MenuManager.displayBus(mlb);
 //                            break;
-                                    
+
                     }
                     break;
 //                case 2:
@@ -109,4 +108,3 @@ public class Main {
     }
 
 }
-

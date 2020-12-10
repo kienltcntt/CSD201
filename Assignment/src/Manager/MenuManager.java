@@ -207,6 +207,10 @@ public class MenuManager {
         }
     }
 
+    public static void deleteAtPositionK(Book_List mlb) {
+
+    }
+
     //Customer
     //Load data from file
     public static void loadReaderFromFile(Reader_List mlc) {
